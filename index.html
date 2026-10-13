@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>College Student Feedback System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+        <div class="nav-container">
+
+            <a href="#home" class="college-brand">
+                <div class="college-logo">NIET</div>
+
+                <div class="college-name">
+                    <span>NIET</span>
+                    <small>GREATER NOIDA</small>
+                </div>
+            </a>
+
+            <nav class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#feedback">Feedback</a>
+                <a href="#about">About</a>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+
+        <div class="hero-decoration">
+            <div class="circle circle-one"></div>
+            <div class="circle circle-two"></div>
+            <div class="circle circle-three"></div>
+        </div>
+
+        <div class="hero-content">
+
+            <span class="hero-label">STUDENT EXPERIENCE • CONTINUOUS IMPROVEMENT</span>
+
+            <h1>
+                Your Voice
+                <span>Shapes Our Future.</span>
+            </h1>
+
+            <p class="hero-description">
+                Share your experience, suggestions and ideas with us.
+                Your feedback helps us create a better learning environment
+                for every student.
+            </p>
+
+            <a href="#feedback" class="hero-button">
+                Share Your Feedback
+                <span>→</span>
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Feedback Section -->
+    <main class="feedback-section" id="feedback">
+
+        <div class="section-heading">
+
+            <p class="section-label">STUDENT FEEDBACK</p>
+
+            <h2>
+                Help Us
+                <span>Improve.</span>
+            </h2>
+
+            <p>
+                Your honest feedback helps our college understand student
+                experiences and continuously improve our academic environment.
+            </p>
+
+        </div>
+
+
+        <!-- Feedback Card -->
+        <div class="feedback-card">
+
+            <form id="feedbackForm" novalidate>
+
+                <!-- Student Information -->
+                <div class="form-section">
+
+                    <h3 class="form-section-title">
+                        <span>01</span>
+                        Student Information
+                    </h3>
+
+                    <div class="form-grid">
+
+                        <div class="form-group">
+                            <label for="studentName">
+                                Full Name <span>*</span>
+                            </label>
+
+                            <input
+                                type="text"
+                                id="studentName"
+                                name="studentName"
+                                placeholder="Enter your full name"
+                                required
+                            >
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="studentEmail">
+                                Email Address <span>*</span>
+                            </label>
+
+                            <input
+                                type="email"
+                                id="studentEmail"
+                                name="studentEmail"
+                                placeholder="Enter your email"
+                                required
+                            >
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="department">
+                                Department <span>*</span>
+                            </label>
+
+                            <select
+                                id="department"
+                                name="department"
+                                required
+                            >
+                                <option value="">Select department</option>
+                                <option value="Computer Science">
+                                    Computer Science
+                                </option>
+                                <option value="Information Technology">
+                                    Information Technology
+                                </option>
+                                <option value="Electronics and Communication">
+                                    Electronics and Communication
+                                </option>
+                                <option value="Electrical and Electronics">
+                                    Electrical and Electronics
+                                </option>
+                                <option value="Mechanical Engineering">
+                                    Mechanical Engineering
+                                </option>
+                                <option value="Civil Engineering">
+                                    Civil Engineering
+                                </option>
+                                <option value="Other">
+                                    Other
+                                </option>
+                            </select>
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="year">
+                                Year of Study <span>*</span>
+                            </label>
+
+                            <select
+                                id="year"
+                                name="year"
+                                required
+                            >
+                                <option value="">Select year</option>
+                                <option value="First Year">First Year</option>
+                                <option value="Second Year">Second Year</option>
+                                <option value="Third Year">Third Year</option>
+                                <option value="Fourth Year">Fourth Year</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Rating Section -->
+                <div class="form-section">
+
+                    <h3 class="form-section-title">
+                        <span>02</span>
+                        Overall Experience
+                    </h3>
+
+                    <div class="rating-area">
+
+                        <label>
+                            How would you rate your overall college experience?
+                            <span>*</span>
+                        </label>
+
+                        <div class="rating-options">
+
+                            <label class="rating-option">
+                                <input
+                                    type="radio"
+                                    name="rating"
+                                    value="1"
+                                    required
+                                >
+                                <span>1</span>
+                                <small>Poor</small>
+                            </label>
+
+                            <label class="rating-option">
+                                <input
+                                    type="radio"
+                                    name="rating"
+                                    value="2"
+                                >
+                                <span>2</span>
+                                <small>Fair</small>
+                            </label>
+
+                            <label class="rating-option">
+                                <input
+                                    type="radio"
+                                    name="rating"
+                                    value="3"
+                                >
+                                <span>3</span>
+                                <small>Good</small>
+                            </label>
+
+                            <label class="rating-option">
+                                <input
+                                    type="radio"
+                                    name="rating"
+                                    value="4"
+                                >
+                                <span>4</span>
+                                <small>Great</small>
+                            </label>
+
+                            <label class="rating-option">
+                                <input
+                                    type="radio"
+                                    name="rating"
+                                    value="5"
+                                >
+                                <span>5</span>
+                                <small>Excellent</small>
+                            </label>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Feedback Section -->
+                <div class="form-section">
+
+                    <h3 class="form-section-title">
+                        <span>03</span>
+                        Your Feedback
+                    </h3>
+
+                    <div class="form-group">
+
+                        <label for="feedback">
+                            Tell us about your experience
+                            <span>*</span>
+                        </label>
+
+                        <textarea
+                            id="feedback"
+                            name="feedback"
+                            maxlength="500"
+                            placeholder="Share your thoughts, suggestions or ideas..."
+                            required
+                        ></textarea>
+
+                        <div class="character-count">
+                            0 / 500 characters
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Submit -->
+                <div class="submit-area">
+
+                    <div class="privacy-note">
+                        <span>🔒</span>
+
+                        <p>
+                            Your feedback is valuable and will be used to
+                            improve the student experience.
+                        </p>
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="submit-button"
+                        id="submitButton"
+                    >
+                        Submit Feedback
+                        <span>→</span>
+                    </button>
+
+                </div>
+
+
+                <!-- Success Message -->
+                <div
+                    class="success-message"
+                    id="successMessage"
+                    role="alert"
+                >
+
+                    <div class="success-icon">✓</div>
+
+                    <div>
+                        <h3>Thank You!</h3>
+
+                        <p>
+                            Your feedback has been submitted successfully.
+                        </p>
+                    </div>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </main>
+
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+
+        <div class="about-content">
+
+            <p class="section-label">ABOUT THE SYSTEM</p>
+
+            <h2>
+                Building a Better
+                <span>Student Experience.</span>
+            </h2>
+
+            <p>
+                The Cloud-Based Student Feedback System provides students
+                with a simple and convenient way to share their experiences,
+                suggestions and feedback with the institution.
+            </p>
+
+
+            <div class="about-features">
+
+                <div class="feature-item">
+
+                    <div class="feature-icon">01</div>
+
+                    <div>
+                        <h3>Student Focused</h3>
+
+                        <p>
+                            Designed to make sharing feedback simple
+                            and accessible.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="feature-item">
+
+                    <div class="feature-icon">02</div>
+
+                    <div>
+                        <h3>Simple & Secure</h3>
+
+                        <p>
+                            A clean interface for submitting meaningful
+                            student feedback.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="feature-item">
+
+                    <div class="feature-icon">03</div>
+
+                    <div>
+                        <h3>Continuous Improvement</h3>
+
+                        <p>
+                            Feedback can help institutions improve
+                            student experiences.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div>
+                <h3>STUDENT FEEDBACK SYSTEM</h3>
+
+                <p>
+                    Cloud-based college feedback platform.
+                </p>
+            </div>
+
+            <div class="footer-right">
+
+                <p>
+                    Academic Project • 2026
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
